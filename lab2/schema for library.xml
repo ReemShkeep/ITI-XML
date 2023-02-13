@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Library" type="LibraryType" />
+
+    <xs:complexType name="LibraryType">
+        <xs:all>
+            <xs:element name="Location" type="xs:string" />
+            <xs:element name="Description" type="xs:string" minOccurs="0" />
+            <xs:element name="Librarian" type="xs:string" />
+            <xs:element name="Books" type="BooksType" />
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="BooksType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Book" type="BookType" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="BookType">
+        <xs:all>
+            <xs:element name="Title" type="xs:string" />
+            <xs:element name="ISBN" type="xs:string" />
+            <xs:element name="Author" type="xs:string" />
+            <xs:element name="Preface" type="xs:string" />
+            <xs:element ref="Parts" minOccurs="0" />
+        </xs:all>
+    </xs:complexType>
+
+    <xs:element name="Parts" type="PartsType" />
+
+    <xs:complexType name="PartsType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Part" type="PartType" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="PartType">
+        <xs:all>
+            <xs:element name="Title" type="xs:string" />
+            <xs:element ref="Chapters" minOccurs="0" />
+        </xs:all>
+    </xs:complexType>
+
+    <xs:element name="Chapters" type="ChaptersType" />
+
+    <xs:complexType name="ChaptersType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Chapter" type="ChapterType" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ChapterType">
+        <xs:all>
+            <xs:element name="Title" type="xs:string" />
+            <xs:element name="Summary" type="xs:string" />
+            <xs:element ref="Sections" minOccurs="0" />
+        </xs:all>
+    </xs:complexType>
+
+    <xs:element name="Sections" type="SectionsType" />
+
+    <xs:complexType name="SectionsType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Section" type="SectionType" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="SectionType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Paragraph" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

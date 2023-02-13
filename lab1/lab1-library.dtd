@@ -1,0 +1,18 @@
+<!ELEMENT Library (Location, Description, Librarian, Books)>
+<!ELEMENT Location (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+<!ELEMENT Librarian (#PCDATA)>
+<!ELEMENT Books (Book+) >
+<!ELEMENT Book (ISBN, BookName, Author,Parts)>
+<!ELEMENT ISBN (#PCDATA)>
+<!ELEMENT BookName (#PCDATA)>
+<!ELEMENT Author (#PCDATA)>
+<!ELEMENT Parts (Part+)>
+<!ELEMENT Part (PartName,Chapters)*>
+<!ELEMENT PartName (#PCDATA)>
+<!ELEMENT Chapters (Chapter+)>
+<!ELEMENT Chapter (Title,Summary,Sections+)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Summary (#PCDATA)>
+<!ELEMENT Sections (Section+)>
+<!ELEMENT Section (#PCDATA)>

@@ -1,0 +1,93 @@
+lab1 was : 
+
+Assignment1:
+
+Design a configuration file for a library.
+– Info. of library consists of a location, a description of
+the library, a librarian and a lot of books.
+– Each book has title, ISBN, and Author. The book
+contains also a preface and many of parts.
+– Each part has title and contains many of chapters.
+– Each chapter has title and contains a summary and
+many of sections.
+– Sections contain the content of the book as
+paragraphs.
+XML must have elements (usual and empty), 
+attributes, and CDATA section
+_______________________________________
+Assignment2:
+
+Design a DTD of the configuration file for a
+library that you made.
+ Note:
+– External DTD
+– In DTD:
+ Define elements with occurrence indicators
+ Define attribute with different types (CDATA, enumerated,...)
+with different behavior (required, optional)
+ Define external entity
+##########################################################
+lab2 was : 
+
+Assignment1
+
+ Create XML-Schema to the following XML doc.
+<WeekDay>valid-values</WeekDay>
+where its valid-values are:
+ Integer range “from 1 - To 7”. 
+ or a string “Saturday | Sunday | ..... | Thursday”
+_______________________________________
+Assignment2
+
+Design a schema of the configuration file for a
+library that you made it.
+ Note:
+– In schema:
+ Use Simple type
+ Use complex type (Simple content, Complex content)
+ Group (element, attribute)
+_______________________________________
+Assignment3
+
+Consider the case where we need to Convert the following 
+BookStore.dtdfile to the XML Schema syntax:<!ELEMENT BookStore (Book)+>
+<!ELEMENT Book (Title, Author, Date, ISBN, Publisher)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Author (#PCDATA)>
+<!ELEMENT Date (#PCDATA)>
+<!ELEMENT ISBN (#PCDATA)>
+<!ELEMENT Publisher (#PCDATA)>
+_______________________________________
+Assignment4
+
+<!ELEMENT BookStore (Book+)>
+<!ELEMENT Book (Title, Author)>
+<!ATTLIST Book Category (science | fiction) “fiction”  
+InStock (true | false) “false”>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Author (#PCDATA)>
+##########################################################
+lab3 was :
+
+Assignment1
+
+ Using: cd-catalog.xml
+ Write a suitable XPath Expression for following use cases:
+ Select all the CD's titles with price more than 10$
+ Select all the CDs that came before 1990
+ Select the titles and prices of all the CDs from "UK"
+ Select the artists names in the CDs that came before "Dolly Parton" 's CD
+ Select the titles of all the CDs after the "Private Dancer" CD
+
+_______________________________________
+Assignment2
+
+A Configuration File
+ Design a configuration file for a library. 
+ Info. of library consists of a location, a description of the library, a librarian and 
+a lot of books.
+ Each book has title, ISBN, and Author. 
+ The book contains also a preface and many of parts.
+ Each part has title and contains many of chapters. 
+ Each chapter has title and contains a summary and many of sections. 
+ Sections contain the content of the book as paragraphs.

@@ -1,0 +1,93 @@
+{
+   "library": {
+     "location": "Library Location",
+     "description": "Library Description",
+     "librarian": " Library Librarian",
+     "books": [
+
+       {
+         "title": "Book Name or Title",
+         "ISBN": "1234567890",
+         "Author": "Author Name",
+         "Preface": "This book was written for my teenage daughter who was trying to make sense of the world around her. I wrote this book so that anyone can understand how it feels to be in a state of growth and confusion.",
+         "Parts": [
+
+
+           {
+             "title": "Part Name or Title",
+             "Chapters": [
+               {
+                 "title": "Chapter Title",
+                 "Summary":"Chapter Summary",
+                 "Sections": [
+                   {
+                     "section": "Chapter Section 1 "
+                   },
+                   {
+                     "section": "Chapter Section 2"
+                   }
+                 ]
+               }
+             ]
+           }
+
+         ]
+       },
+       {
+        "title": "Book Name2 or Title2",
+        "ISBN": "1234567890",
+        "Author": "Author Name",
+        "Preface": "This book was written for my teenage daughter who was trying to make sense of the world around her. I wrote this book so that anyone can understand how it feels to be in a state of growth and confusion.",
+        "Parts": [
+
+          {
+            "title": "Part Name or Title",
+            "Chapters": [
+              {
+                "title": "Chapter Title",
+                "Summary":"Chapter Summary",
+                "Sections": [
+                  {
+                    "section": "Chapter Section 1 "
+                  },
+                  {
+                    "section": "Chapter Section 2"
+                  }
+                ]
+              }
+            ]
+          }
+
+        ]
+      },   
+     {
+        "title": "Book Name3 or Title3",
+        "ISBN": "1234567890",
+        "Author": "Author Name",
+        "Preface": "This book was written for my teenage daughter who was trying to make sense of the world around her. I wrote this book so that anyone can understand how it feels to be in a state of growth and confusion.",
+        "Parts": [
+
+          {
+            "title": "Part Name or Title",
+            "Chapters": [
+              {
+                "title": "Chapter Title",
+                "Summary":"Chapter Summary",
+                "Sections": [
+                  {
+                    "section": "Chapter Section 1 "
+                  },
+                  {
+                    "section": "Chapter Section 2"
+                  }
+                ]
+              }
+            ]
+          }
+
+        ]
+      }
+     ]
+   }
+ }
+ 

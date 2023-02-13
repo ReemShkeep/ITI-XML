@@ -1,0 +1,64 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="BookStore" type="BookStoreType" />
+    <xs:complexType name="BookStoreType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Book" type="BookType" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="BookType">
+        <xs:all>
+            <xs:element name="Title" type="xs:string" />
+            <xs:element name="Author" type="xs:string" />
+            <xs:element name="Date" type="xs:string" />
+            <xs:element name="ISBN" type="xs:string" />
+            <xs:element name="Publisher" type="xs:string" />
+        </xs:all>
+    </xs:complexType>
+
+    <xs:element name="Parts" type="PartsType" />
+
+    <xs:complexType name="PartsType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Part" type="PartType" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="PartType">
+        <xs:all>
+            <xs:element name="Title" type="xs:string" />
+            <xs:element ref="Chapters" minOccurs="0" />
+        </xs:all>
+    </xs:complexType>
+
+    <xs:element name="Chapters" type="ChaptersType" />
+
+    <xs:complexType name="ChaptersType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Chapter" type="ChapterType" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ChapterType">
+        <xs:all>
+            <xs:element name="Title" type="xs:string" />
+            <xs:element name="Summary" type="xs:string" />
+            <xs:element ref="Sections" minOccurs="0" />
+        </xs:all>
+    </xs:complexType>
+
+    <xs:element name="Sections" type="SectionsType" />
+
+    <xs:complexType name="SectionsType">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Section" type="SectionType" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="SectionType">
+        <xs:all>
+            <xs:element name="Title" type="xs:string" />
+            <xs:element name="Summary" type="xs:string" />
+        </xs:all>
+    </xs:complexType>
+</xs:schema>

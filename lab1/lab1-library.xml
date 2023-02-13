@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Library SYSTEM "lab1-library.dtd">
+
+<Library>
+   <Location>Library Location</Location>
+   <Description>Library Description</Description>
+   <Librarian>Library Librarian</Librarian>
+   <Books>
+
+      <Book>
+         <ISBN>Book Id</ISBN>
+         <BookName>Book Name</BookName>
+         <Author>Book Author</Author>
+         <Parts>
+            <Part>
+               <PartName>Part Name</PartName>
+               <Chapters>
+                  <Chapter>
+                     <Title>Chapter Title</Title>
+                     <Summary>Chapter Summary</Summary>
+                     <Sections>
+                        <Section>Chapter Section 1</Section>
+                        <Section>Chapter Section 2</Section>
+                     </Sections>
+                  </Chapter>
+                  <Chapter>
+                     <Title>Chapter Title</Title>
+                     <Summary>Chapter Summary</Summary>
+                     <Sections>
+                        <Section>Chapter Section 1</Section>
+                        <Section>Chapter Section 2</Section>
+                     </Sections>
+                  </Chapter>
+               </Chapters>
+            </Part>
+         </Parts>
+      </Book>
+
+      <Book>
+         <ISBN>Book Id</ISBN>
+         <BookName>Book Name</BookName>
+         <Author>Book Author</Author>
+         <Parts>
+            <Part>
+               <PartName>Part Name</PartName>
+               <Chapters>
+                  <Chapter>
+                     <Title>Chapter Title</Title>
+                     <Summary>Chapter Summary</Summary>
+                     <Sections>
+                        <Section>Chapter Section 1</Section>
+                        <Section>Chapter Section 2</Section>
+                     </Sections>
+                  </Chapter>
+                  <Chapter>
+                     <Title>Chapter Title</Title>
+                     <Summary>Chapter Summary</Summary>
+                     <Sections>
+                        <Section>Chapter Section 1</Section>
+                        <Section>Chapter Section 2</Section>
+                     </Sections>
+                  </Chapter>
+               </Chapters>
+            </Part>
+         </Parts>
+      </Book>
+
+      <Book>
+         <ISBN>Book Id</ISBN>
+         <BookName>Book Name</BookName>
+         <Author>Book Author</Author>
+         <Parts>
+            <Part>
+               <PartName>Part Name</PartName>
+               <Chapters>
+                  <Chapter>
+                     <Title>Chapter Title</Title>
+                     <Summary>Chapter Summary</Summary>
+                     <Sections>
+                        <Section>Chapter Section 1</Section>
+                        <Section>Chapter Section 2</Section>
+                     </Sections>
+                  </Chapter>
+                  <Chapter>
+                     <Title>Chapter Title</Title>
+                     <Summary>Chapter Summary</Summary>
+                     <Sections>
+                        <Section>Chapter Section 1</Section>
+                        <Section>Chapter Section 2</Section>
+                     </Sections>
+                  </Chapter>
+               </Chapters>
+            </Part>
+         </Parts>
+      </Book>
+
+   </Books>
+</Library>
